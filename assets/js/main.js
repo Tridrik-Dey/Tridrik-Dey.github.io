@@ -401,13 +401,20 @@ const objectIndex = $('.object-index');
 if (objectIndex) {
   const links = new Map($$('a[data-section]', objectIndex).map(a => [a.dataset.section, a]));
   const visible = new Map();
+  let shown = null;
   const mark = () => {
     // The section nearest the top of the viewport wins.
     let current = null, best = Infinity;
     for (const [id, top] of visible) if (top < best) { best = top; current = id; }
+    if (current === shown) return;
+    shown = current;
     links.forEach((a, id) => a.setAttribute('aria-current', id === current ? 'true' : 'false'));
+    // Keep the active item in view by scrolling only the menu sideways. (scrollIntoView
+    // would also move the page itself, which made scrolling jump.)
     const active = current && links.get(current);
-    if (active) active.scrollIntoView({ block: 'nearest', inline: 'nearest' });
+    if (active && objectIndex.scrollWidth > objectIndex.clientWidth) {
+      objectIndex.scrollTo({ left: active.offsetLeft - (objectIndex.clientWidth - active.offsetWidth) / 2 });
+    }
   };
   const sectionObserver = new IntersectionObserver(entries => {
     for (const e of entries) {
