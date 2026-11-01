@@ -12,6 +12,8 @@ export const site = {
   photo: 'assets/avatar.png',
   ogImage: 'assets/og.png',
   updated: '2026-10-31',
+  // Search-engine ownership codes (Google Search Console, Bing Webmaster Tools). Empty = no tag.
+  verify: { google: 'TpDvIQLYxlIpqFZb74sLDKEGU_5LTjOBwT2x2uKrREA', bing: '' },
 };
 
 export const ui = {

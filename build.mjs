@@ -85,7 +85,9 @@ function head(lang) {
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${esc(t(ui.title, lang))}</title>
 <meta name="description" content="${esc(t(ui.description, lang))}">
-<meta name="author" content="${site.name}">
+<meta name="author" content="${site.name}">${site.verify.google ? `
+<meta name="google-site-verification" content="${esc(site.verify.google)}">` : ''}${site.verify.bing ? `
+<meta name="msvalidate.01" content="${esc(site.verify.bing)}">` : ''}
 <meta name="theme-color" content="#0b0f14">
 <link rel="canonical" href="${pageUrl(lang)}">
 <link rel="alternate" hreflang="en" href="${pageUrl('en')}">
