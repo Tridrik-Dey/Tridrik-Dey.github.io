@@ -39,19 +39,19 @@ export const ui = {
   },
   hi: { en: "Hi, I'm", it: 'Ciao, sono' },
   lede: {
-    en: 'Software Developer at BARS, a DocuSign partner in Rome. I connect DocuSign to enterprise systems — SAP, SharePoint, Microsoft Entra ID, HR platforms — with Java/Spring Boot, Node.js and TypeScript. On my own I build RAG systems and AI agents. Open to developer roles in Rome, across Italy or remote.',
-    it: 'Sviluppatore software in BARS, partner DocuSign a Roma. Collego DocuSign ai sistemi enterprise (SAP, SharePoint, Microsoft Entra ID, piattaforme HR) con Java/Spring Boot, Node.js e TypeScript. In autonomia costruisco sistemi RAG e agenti AI. Aperto a ruoli da sviluppatore a Roma, in Italia o da remoto.',
+    en: 'Software Developer at BARS, a DocuSign partner in Rome. I connect DocuSign to enterprise systems — SAP, SharePoint, Microsoft Entra ID, HR platforms — with Java/Spring Boot, Node.js and TypeScript. On my own I build RAG systems and AI agents. Open to remote developer roles, based in Rome (CET).',
+    it: 'Sviluppatore software in BARS, partner DocuSign a Roma. Collego DocuSign ai sistemi enterprise (SAP, SharePoint, Microsoft Entra ID, piattaforme HR) con Java/Spring Boot, Node.js e TypeScript. In autonomia costruisco sistemi RAG e agenti AI. Disponibile per ruoli da sviluppatore da remoto, con base a Roma (CET).',
   },
   // Recruiter brief: the facts a recruiter filters on, shown in the hero and searchable.
   brief: [
     { key: 'work', label: { en: 'Right to work', it: 'Diritto al lavoro' }, value: { en: 'Italy ✓ (working in Rome)', it: 'Italia ✓ (lavoro a Roma)' } },
     { key: 'notice', label: { en: 'Notice period', it: 'Preavviso' }, value: { en: 'Flexible', it: 'Flessibile' } },
-    { key: 'where', label: { en: 'Where', it: 'Dove' }, value: { en: 'Rome · hybrid · remote', it: 'Roma · ibrido · remoto' } },
-    { key: 'langs', label: { en: 'Languages', it: 'Lingue' }, value: { en: 'English (professional) · Italian A2, preparing B1', it: 'Inglese (professionale) · Italiano A2, in preparazione B1' } },
+    { key: 'where', label: { en: 'Where', it: 'Dove' }, value: { en: 'Remote only · based in Rome (CET)', it: 'Solo da remoto · base a Roma (CET)' } },
+    { key: 'langs', label: { en: 'Languages', it: 'Lingue' }, value: { en: 'Bengali, Hindi (native) · English (professional) · Italian A2 → B1', it: 'Bengalese, hindi (madrelingua) · Inglese (professionale) · Italiano A2 → B1' } },
   ],
   briefTitle: { en: 'Recruiter brief', it: 'In breve per i recruiter' },
-  briefTags: 'right-to-work work-permit availability notice-period location remote hybrid languages english italian',
-  open: { en: 'Open to opportunities', it: 'Aperto a nuove opportunità' },
+  briefTags: 'right-to-work work-permit availability notice-period location remote languages english italian bengali hindi',
+  open: { en: 'Open to remote roles', it: 'Disponibile per ruoli da remoto' },
   enterRoom: { en: 'Explore the room', it: 'Esplora la stanza' },
   classic: { en: 'Read CV', it: 'Leggi il CV' },
   landing: { en: 'Explore the objects above, or read their stories below.', it: 'Esplora gli oggetti qui sopra, oppure leggi le loro storie qui sotto.' },
@@ -171,8 +171,8 @@ export const ui = {
     { value: 'M.Sc.', label: { en: 'ICT for Internet & Multimedia, Padova', it: 'ICT for Internet and Multimedia, Padova' } },
   ],
   contactText: {
-    en: 'I’m open to software development roles in Rome, across Italy, or remote — especially where Java backends meet integrations (DocuSign, SAP, Microsoft 365) and AI. The fastest way to reach me is email.',
-    it: 'Sono aperto a ruoli di sviluppo software a Roma, in Italia o da remoto, soprattutto dove i backend Java incontrano le integrazioni (DocuSign, SAP, Microsoft 365) e l’AI. Il modo più rapido per contattarmi è l’email.',
+    en: 'I’m open to remote software development roles — I’m based in Rome (CET) — especially where Java backends meet integrations (DocuSign, SAP, Microsoft 365) and AI. The fastest way to reach me is email.',
+    it: 'Sono disponibile per ruoli di sviluppo software da remoto (con base a Roma, CET), soprattutto dove i backend Java incontrano le integrazioni (DocuSign, SAP, Microsoft 365) e l’AI. Il modo più rapido per contattarmi è l’email.',
   },
   copy: { en: 'Copy email', it: 'Copia email' },
   copied: { en: 'Copied!', it: 'Copiato!' },
@@ -569,8 +569,8 @@ export const skills = [
 ];
 
 export const languages = {
-  en: ['English — professional', 'Italian — A2, preparing for B1'],
-  it: ['Inglese — professionale', 'Italiano — A2, in preparazione per il B1'],
+  en: ['Bengali — native (mother tongue)', 'Hindi — native', 'English — professional', 'Italian — A2, preparing for B1'],
+  it: ['Bengalese — madrelingua', 'Hindi — madrelingua', 'Inglese — professionale', 'Italiano — A2, in preparazione per il B1'],
 };
 
 export const education = [
@@ -607,14 +607,14 @@ export const faq = [
     tags: ['notice-period', 'availability'],
   },
   {
-    q: { en: 'Remote, hybrid or on-site?', it: 'Da remoto, ibrido o in sede?' },
-    a: { en: 'All three: on-site or hybrid in Rome, or remote.', it: 'Tutti e tre: in sede o ibrido a Roma, oppure da remoto.' },
-    tags: ['remote', 'hybrid', 'location'],
+    q: { en: 'Do you work remotely?', it: 'Lavori da remoto?' },
+    a: { en: 'Yes — I’m looking for remote roles only. I’m based in Rome (CET), so I overlap fully with European working hours and have the right to work in Italy.', it: 'Sì, cerco solo ruoli da remoto. Ho base a Roma (CET), quindi lavoro negli stessi orari europei e ho il diritto di lavorare in Italia.' },
+    tags: ['remote', 'location', 'timezone'],
   },
   {
-    q: { en: 'How good is your Italian?', it: 'Com’è il tuo italiano?' },
-    a: { en: 'A2 and preparing for B1 — I even built my own app to practise verbs. I work comfortably in English.', it: 'A2, in preparazione per il B1: ho persino creato un’app per esercitarmi con i verbi. Lavoro senza difficoltà in inglese.' },
-    tags: ['languages', 'italian', 'english'],
+    q: { en: 'Which languages do you speak?', it: 'Quali lingue parli?' },
+    a: { en: 'Bengali (mother tongue) and Hindi (native), professional English, and Italian at A2, preparing for B1 — I even built my own app to practise Italian verbs.', it: 'Bengalese (madrelingua) e hindi (madrelingua), inglese professionale e italiano A2, in preparazione per il B1: ho persino creato un’app per esercitarmi con i verbi italiani.' },
+    tags: ['languages', 'italian', 'english', 'bengali', 'hindi'],
   },
   {
     q: { en: 'Can I see the code of your DocuSign integrations?', it: 'Posso vedere il codice delle tue integrazioni DocuSign?' },

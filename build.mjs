@@ -61,7 +61,7 @@ function jsonLd(lang) {
         recognizedBy: { '@type': 'Organization', name: c.issuer },
       })),
       knowsAbout,
-      knowsLanguage: ['en', 'it'],
+      knowsLanguage: ['bn', 'hi', 'en', 'it'],
       sameAs: [site.linkedin, site.github],
     },
   };
@@ -409,7 +409,7 @@ function llms(full) {
     '',
     `> ${t(ui.description, L)}`,
     '',
-    `- Location: Rome, Italy (open to roles in Rome, across Italy, or remote)`,
+    `- Location: Rome, Italy (CET) · looking for remote roles only`,
     `- Current role: Software Developer at BARS (since Sep 2025)`,
     `- Email: ${site.email}`,
     `- LinkedIn: ${site.linkedin}`,

@@ -23,7 +23,7 @@ const H = {
 
 function cv(lang) {
   const jobs = experience.map(j => {
-    const points = j.id === 'romatre' ? [...t(j.points, lang), research[lang].points[2]] : t(j.points, lang);
+    const points = j.id === 'romatre' ? [...t(j.points, lang), research[lang].points.at(-1)] : t(j.points, lang);
     return `<div class="item"><div class="row"><strong>${esc(t(j.role, lang))} — ${esc(j.company)}</strong><span>${esc(t(j.period, lang))}</span></div>
       <div class="sub">${esc(t(j.place, lang))}</div><ul>${points.map(p => `<li>${esc(p)}</li>`).join('')}</ul></div>`;
   }).join('');

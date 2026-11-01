@@ -2,15 +2,15 @@
 
 > Software Developer at BARS in Rome, a DocuSign partner, integrating DocuSign with SAP, SharePoint, Microsoft Entra ID and HR systems using Java/Spring Boot, Node.js and TypeScript. Also builds RAG and AI-agent projects.
 
-- Location: Rome, Italy (open to roles in Rome, across Italy, or remote)
+- Location: Rome, Italy (CET) · looking for remote roles only
 - Current role: Software Developer at BARS (since Sep 2025)
 - Email: tridrik21@gmail.com
 - LinkedIn: https://www.linkedin.com/in/tridrik-dey
 - GitHub: https://github.com/Tridrik-Dey
 - Right to work: Italy ✓ (working in Rome)
 - Notice period: Flexible
-- Where: Rome · hybrid · remote
-- Languages: English (professional) · Italian A2, preparing B1
+- Where: Remote only · based in Rome (CET)
+- Languages: Bengali, Hindi (native) · English (professional) · Italian A2 → B1
 
 ## Pages
 

@@ -2,15 +2,15 @@
 
 > Software Developer at BARS in Rome, a DocuSign partner, integrating DocuSign with SAP, SharePoint, Microsoft Entra ID and HR systems using Java/Spring Boot, Node.js and TypeScript. Also builds RAG and AI-agent projects.
 
-- Location: Rome, Italy (open to roles in Rome, across Italy, or remote)
+- Location: Rome, Italy (CET) · looking for remote roles only
 - Current role: Software Developer at BARS (since Sep 2025)
 - Email: tridrik21@gmail.com
 - LinkedIn: https://www.linkedin.com/in/tridrik-dey
 - GitHub: https://github.com/Tridrik-Dey
 - Right to work: Italy ✓ (working in Rome)
 - Notice period: Flexible
-- Where: Rome · hybrid · remote
-- Languages: English (professional) · Italian A2, preparing B1
+- Where: Remote only · based in Rome (CET)
+- Languages: Bengali, Hindi (native) · English (professional) · Italian A2 → B1
 
 ## Pages
 
@@ -149,9 +149,9 @@ At Università Roma Tre I worked on how people learn safety-critical tasks when 
 
 **What is your notice period?** It’s flexible — I’m happy to agree a start date that works for both sides.
 
-**Remote, hybrid or on-site?** All three: on-site or hybrid in Rome, or remote.
+**Do you work remotely?** Yes — I’m looking for remote roles only. I’m based in Rome (CET), so I overlap fully with European working hours and have the right to work in Italy.
 
-**How good is your Italian?** A2 and preparing for B1 — I even built my own app to practise verbs. I work comfortably in English.
+**Which languages do you speak?** Bengali (mother tongue) and Hindi (native), professional English, and Italian at A2, preparing for B1 — I even built my own app to practise Italian verbs.
 
 **Can I see the code of your DocuSign integrations?** The client code is private, so the case studies above describe the problem, my role, the architecture and the key decisions. The SharePoint → DocuSign proof of concept has a public test version, and I’m glad to walk through any design in an interview.
 
