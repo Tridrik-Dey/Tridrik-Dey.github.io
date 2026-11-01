@@ -381,17 +381,36 @@ function webglOK() {
   } catch (e) { return false; }
 }
 
+// The 3D code (three.js is ~675 KB, and building the scene blocks the main thread) waits
+// until the page has loaded and the browser is idle, so text and photo appear first.
+// On phones it waits further, for the first touch or scroll (or 8 s), because the
+// scene setup alone would make the first screen sluggish on slower devices.
+const afterLoad = () => new Promise(resolve => {
+  const idle = () => (window.requestIdleCallback ? requestIdleCallback(resolve, { timeout: 1500 }) : setTimeout(resolve, 200));
+  if (document.readyState === 'complete') idle();
+  else addEventListener('load', idle, { once: true });
+});
+const firstInteraction = () => new Promise(resolve => {
+  const events = ['pointerdown', 'touchstart', 'scroll', 'keydown', 'wheel'];
+  const go = () => { events.forEach(e => removeEventListener(e, go)); clearTimeout(timer); resolve(); };
+  events.forEach(e => addEventListener(e, go, { once: true, passive: true }));
+  const timer = setTimeout(go, 8000);
+});
+const isPhone = matchMedia('(pointer: coarse), (max-width: 860px)').matches;
+
 const roomSection = $('.room');
 if (webglOK()) {
-  import('./sphere.js').then(m => m.initSphere($('.hero-canvas'))).catch(() => {});
-  const lazyRoom = new IntersectionObserver(entries => {
-    if (!entries.some(e => e.isIntersecting)) return;
-    lazyRoom.disconnect();
-    import('./room.js')
-      .then(m => m.initRoom(roomSection))
-      .catch(() => roomSection.classList.add('no-webgl'));
-  }, { rootMargin: '300px' });
-  lazyRoom.observe(roomSection);
+  afterLoad().then(() => (isPhone ? firstInteraction() : null)).then(() => {
+    import('./sphere.js').then(m => m.initSphere($('.hero-canvas'))).catch(() => {});
+    const lazyRoom = new IntersectionObserver(entries => {
+      if (!entries.some(e => e.isIntersecting)) return;
+      lazyRoom.disconnect();
+      import('./room.js')
+        .then(m => m.initRoom(roomSection))
+        .catch(() => roomSection.classList.add('no-webgl'));
+    }, { rootMargin: '300px' });
+    lazyRoom.observe(roomSection);
+  });
 } else {
   roomSection.classList.add('no-webgl');
 }

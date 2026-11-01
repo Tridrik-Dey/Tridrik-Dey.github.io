@@ -109,7 +109,9 @@ function head(lang) {
 <link rel="icon" href="${root}assets/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<!-- Fonts load without blocking the first paint; system fonts show until they arrive. -->
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@500;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@500;700&display=swap"></noscript>
 <link rel="stylesheet" href="${root}assets/css/style.css">
 <script>document.documentElement.classList.replace('no-js','js');try{var s=localStorage.getItem('theme');if(s)document.documentElement.dataset.theme=s}catch(e){}</script>
 <script type="application/ld+json">${JSON.stringify(jsonLd(lang))}</script>
@@ -124,7 +126,7 @@ function nav(lang) {
     .map(([id, label]) => `<a href="#${id}">${esc(t(label, lang))}</a>`).join('');
   return `<a class="skip" href="#about">${esc(t(ui.skip, lang))}</a>
 <header class="nav">
-  <a class="monogram" href="#hero" aria-label="${site.name}">TD</a>
+  <a class="monogram" href="#hero" aria-label="TD · ${site.name}">TD</a>
   <nav class="nav-links" aria-label="Main">${links}</nav>
   <div class="nav-tools">
     <a class="lang" href="${otherHref}" hreflang="${other}" lang="${other}">${other.toUpperCase()}<span class="sr-only"> · ${esc(t(ui.otherLang, lang))}</span></a>
