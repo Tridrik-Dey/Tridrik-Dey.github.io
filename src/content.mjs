@@ -47,7 +47,7 @@ export const ui = {
     { key: 'work', label: { en: 'Right to work', it: 'Diritto al lavoro' }, value: { en: 'Italy ✓ (working in Rome)', it: 'Italia ✓ (lavoro a Roma)' } },
     { key: 'notice', label: { en: 'Notice period', it: 'Preavviso' }, value: { en: 'Flexible', it: 'Flessibile' } },
     { key: 'where', label: { en: 'Where', it: 'Dove' }, value: { en: 'Remote only · based in Rome (CET)', it: 'Solo da remoto · base a Roma (CET)' } },
-    { key: 'langs', label: { en: 'Languages', it: 'Lingue' }, value: { en: 'Bengali, Hindi (native) · English (professional) · Italian A2 → B1', it: 'Bengalese, hindi (madrelingua) · Inglese (professionale) · Italiano A2 → B1' } },
+    { key: 'langs', label: { en: 'Languages', it: 'Lingue' }, value: { en: 'Bengali (mother tongue) · Hindi (native) · English (professional) · Italian A2 → B1', it: 'Bengalese (lingua madre) · Hindi (madrelingua) · Inglese (professionale) · Italiano A2 → B1' } },
   ],
   briefTitle: { en: 'Recruiter brief', it: 'In breve per i recruiter' },
   briefTags: 'right-to-work work-permit availability notice-period location remote languages english italian bengali hindi',
@@ -570,7 +570,7 @@ export const skills = [
 
 export const languages = {
   en: ['Bengali — native (mother tongue)', 'Hindi — native', 'English — professional', 'Italian — A2, preparing for B1'],
-  it: ['Bengalese — madrelingua', 'Hindi — madrelingua', 'Inglese — professionale', 'Italiano — A2, in preparazione per il B1'],
+  it: ['Bengalese — lingua madre', 'Hindi — madrelingua', 'Inglese — professionale', 'Italiano — A2, in preparazione per il B1'],
 };
 
 export const education = [
@@ -613,7 +613,7 @@ export const faq = [
   },
   {
     q: { en: 'Which languages do you speak?', it: 'Quali lingue parli?' },
-    a: { en: 'Bengali (mother tongue) and Hindi (native), professional English, and Italian at A2, preparing for B1 — I even built my own app to practise Italian verbs.', it: 'Bengalese (madrelingua) e hindi (madrelingua), inglese professionale e italiano A2, in preparazione per il B1: ho persino creato un’app per esercitarmi con i verbi italiani.' },
+    a: { en: 'Bengali (mother tongue) and Hindi (native), professional English, and Italian at A2, preparing for B1 — I even built my own app to practise Italian verbs.', it: 'Bengalese (lingua madre) e hindi (madrelingua), inglese professionale e italiano A2, in preparazione per il B1: ho persino creato un’app per esercitarmi con i verbi italiani.' },
     tags: ['languages', 'italian', 'english', 'bengali', 'hindi'],
   },
   {
