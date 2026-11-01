@@ -114,7 +114,8 @@ function head(lang) {
 <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@500;700&display=swap"></noscript>
 <link rel="stylesheet" href="${root}assets/css/style.css">
 <script>document.documentElement.classList.replace('no-js','js');try{var s=localStorage.getItem('theme');if(s)document.documentElement.dataset.theme=s}catch(e){}</script>
-<script type="application/ld+json">${JSON.stringify(jsonLd(lang))}</script>
+${site.goatcounter ? `<script data-goatcounter="https://${site.goatcounter}.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+` : ''}<script type="application/ld+json">${JSON.stringify(jsonLd(lang))}</script>
 <script type="application/ld+json">${JSON.stringify(faqLd(lang))}</script>
 </head>`;
 }

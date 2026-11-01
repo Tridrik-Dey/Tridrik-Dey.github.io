@@ -14,6 +14,8 @@ export const site = {
   updated: '2026-10-31',
   // Search-engine ownership codes (Google Search Console, Bing Webmaster Tools). Empty = no tag.
   verify: { google: 'TpDvIQLYxlIpqFZb74sLDKEGU_5LTjOBwT2x2uKrREA', bing: '' },
+  // GoatCounter code: privacy-friendly visit counts (no cookies). Links like ?ref=acme show up per company.
+  goatcounter: 'tridrikdey',
 };
 
 export const ui = {
