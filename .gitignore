@@ -1,0 +1,7 @@
+.build/
+node_modules/
+
+# Notes for the coding agents, not part of the public site
+HANDOFF.md
+AGENTS.md
+CLAUDE.md

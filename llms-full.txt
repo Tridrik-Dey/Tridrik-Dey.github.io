@@ -1,0 +1,169 @@
+# Tridrik Dey
+
+> Software Developer at BARS in Rome, a DocuSign partner, integrating DocuSign with SAP, SharePoint, Microsoft Entra ID and HR systems using Java/Spring Boot, Node.js and TypeScript. Also builds RAG and AI-agent projects.
+
+- Location: Rome, Italy (open to roles in Rome, across Italy, or remote)
+- Current role: Software Developer at BARS (since Sep 2025)
+- Email: tridrik21@gmail.com
+- LinkedIn: https://www.linkedin.com/in/tridrik-dey
+- GitHub: https://github.com/Tridrik-Dey
+- Right to work: Italy ✓ (working in Rome)
+- Notice period: Flexible
+- Where: Rome · hybrid · remote
+- Languages: English (professional) · Italian A2, preparing B1
+
+## Pages
+
+- [Portfolio (English)](https://tridrik-dey.github.io/): interactive CV, projects and contact
+- [Portfolio (Italiano)](https://tridrik-dey.github.io/it/): versione italiana
+- [Full CV in Markdown](https://tridrik-dey.github.io/llms-full.txt): complete experience, projects and skills
+- [CV PDF (English)](https://tridrik-dey.github.io/assets/cv/Tridrik-Dey-CV-EN.pdf)
+
+## Key skills
+
+- Enterprise integration: DocuSign eSignature API, DocuSign Maestro, Data IO Extension Apps, SAP (SOAP), Microsoft Graph, SharePoint, Entra ID, OAuth 2.0, Zucchetti HR
+- Backend: Java 17, Spring Boot, Spring MVC, Kafka, REST APIs, JPA / JDBC, MySQL, PostgreSQL, XML / JSON contracts
+- Frontend: React, Angular, SAP UI5, Next.js, TypeScript, JavaScript, jQuery, HTML5 / CSS, Tailwind CSS
+- AI & data: LLMs, RAG, AI agents, LangChain, OpenAI API, Embeddings, FAISS, Whisper, Transformers, Streamlit
+- XR, quality & tools: VR / XR, Haptics, Selenium, Testing / QA, Puppeteer, XState, Firebase, FFmpeg, Git
+
+## DocuSign integration work (client names withheld)
+
+- SAP document data for DocuSign Maestro (Working prototype · ongoing): Built a private DocuSign Data IO Extension App in Node.js/Express that Maestro calls server-to-server. It queries SAP over SOAP and returns the document ID, title and status to the workflow.
+- SharePoint purchase orders → DocuSign (Proof of concept): Built a Java/Spring Boot service: from a PO number and revision it finds the SharePoint folder via Microsoft Graph, collects the PDFs, assembles the DocuSign envelope (main PO first) and sends it, returning envelope ID, status and warnings.
+- Signer data from Microsoft Entra ID (Proof of concept): Built a TypeScript service that resolves envelope roles, matches users by email in Microsoft Entra ID via Microsoft Graph, and writes the mapped attributes as envelope custom fields.
+- HR e-signature and archiving to Zucchetti (Analysis + phase-1 prototype · ongoing): Wrote the bilingual functional analysis (EN/IT) and built the phase-1 prototype: in-person signing, archiving and an action log, on mock data.
+
+## Featured projects
+
+- [Person Registry](https://github.com/Tridrik-Dey/person-registry-monorepo): Full-stack CRUD app (Anagrafica Persona) for people and addresses: search by Codice Fiscale, filters by surname and province, validation and Italian/English DTO mapping.
+- [VideoRAG-AI](https://github.com/Tridrik-Dey/VideoRAG-AI): Talk to your videos: local transcription with faster-whisper, semantic search with bge-small embeddings and FAISS, and answers with exact timestamps and “play from here” citations.
+- [chatCV-AI](https://github.com/Tridrik-Dey/chatCV-AI): An AI assistant that represents me to recruiters: answers questions about a professional profile using RAG with gpt-4o-mini and text-embedding-3-small.
+- [Midas Core (J.P. Morgan)](https://github.com/Tridrik-Dey/jpmc-midas-core): Spring Boot service from the J.P. Morgan Software Engineering program: consumes Kafka transactions, validates them, applies incentive bonuses from a companion API and exposes account balances over REST.
+- [JobSeekerAI](https://github.com/Tridrik-Dey/JobSeekerAI): An autonomous job-application agent: GPT-4 plans the steps, an XState state machine orchestrates the workflow, and Puppeteer drives the browser. Multi-provider, with a CLI and recovery from failures.
+- [AI Ticket Assistant](https://github.com/Tridrik-Dey/ai-ticket-assistant): Hackathon project that classifies support tickets, detects priority, extracts key information and drafts suggested responses.
+- [QuickSum+](https://github.com/Tridrik-Dey/QuickSum-): Offline-friendly summariser running a local T5-small model, with a choice of tone: formal, casual or bullet points.
+- [Italian B1 Verb Master](https://github.com/Tridrik-Dey/italian-b1-verb-master): My app for learning Italian: 200 verbs in every standard tense with B1 at the centre, sentence practice with time clues, mixed tests that group mistakes by verb and tense, and progress saved locally. Covered by 230+ unit and component tests plus Playwright end-to-end tests on desktop and mobile.
+- [Italian Bridge](https://github.com/Tridrik-Dey/italian-bridge): Italian vocabulary learning app from A1 to B1 (CEFR) with Firebase sync across devices.
+- [LinguaLine](https://github.com/Tridrik-Dey/LinguaLine): Chrome extension that overlays Italian subtitles with a live English translation underneath on YouTube and Netflix — built because I was learning Italian myself.
+
+## About
+
+I’m a Software Developer at BARS in Rome, a DocuSign partner. My day-to-day work is integrating DocuSign with enterprise systems — SAP, SharePoint, Microsoft Entra ID and HR platforms — using Java/Spring Boot, Node.js and TypeScript: backend APIs, OAuth 2.0 and SOAP/REST integrations, XML/JSON data contracts and the frontends around them.
+
+Alongside my professional work I build AI projects independently: LLM applications, RAG architectures and AI agents. NVIDIA’s “Building RAG Agents with LLMs” course and the J.P. Morgan Software Engineering program sharpened how I think about scalable systems and AI-assisted development.
+
+Before that I was a researcher at Università Roma Tre, designing and evaluating VR training systems with haptic feedback for Industry 4.0 and workplace safety. My path runs from electronics engineering through QA, operations and research to software development — so I care about systems that work for the people using them.
+
+## Experience
+
+### Software Developer — BARS
+Sep 2025 – Present · Rome, Italy
+
+- Built a private DocuSign Data IO Extension App (Node.js/Express, OAuth 2.0 client credentials, SOAP) so Maestro workflows retrieve SAP document data by request number before signature — working prototype, ongoing.
+- Built a Java/Spring Boot proof of concept that collects purchase-order PDFs from SharePoint via Microsoft Graph and sends them as one DocuSign envelope to the vendor, with a credential-free mock mode and a REST contract designed for SAP.
+- Built a TypeScript proof of concept that writes Microsoft Entra ID user attributes into DocuSign envelope custom fields through a configurable mapping, ready for document-management archiving.
+- Wrote the bilingual functional analysis and built a mock-data prototype for HR e-signature (in-person signing on tablet, archiving to Zucchetti HR), with integrations behind adapters.
+- Frontend work with Angular, SAP UI5, JavaScript and HTML5 on DTM and AR/XR business platforms.
+
+### Research Assistant — Università degli Studi Roma Tre
+Jan 2024 – Sep 2025 · Rome, Italy
+
+- Designed and evaluated VR-based training systems with haptic feedback.
+- Focus on Industry 4.0 and workplace-safety training scenarios.
+
+### Back Office Manager — JR Motors Pvt Ltd (Tata Motors distributor)
+Nov 2016 – Nov 2017 · Jun 2018 – Sep 2022 · India
+
+- Data processing in CRM-DMS, the portal built by TCS for all Tata Motors dealers.
+- Billing and stock management; the bridge between dealers and Tata Motors.
+- Managed HR and back-office operations under tight deadlines, with teamwork and customer handling.
+
+### Associate Advisor — Wipro
+Nov 2017 – Jun 2018 · India
+
+- Technical support for British Telecom’s UK customers: broadband, fibre, TV, mobile and telephone — troubleshooting, maintenance and billing.
+- Consistently received 10/10 CSAT ratings; recognised by the team lead.
+- Second runner-up performer in the British Telecom process training.
+
+### Software Test Engineer — IBS Software
+Sep 2015 – Nov 2016 · India
+
+- Tested iCargo, the cargo management system of Lufthansa Cargo (Frankfurt).
+- Trained in Selenium automation and Java, Spring MVC, JDBC, jQuery, JavaScript, HTML5, CSS, Bootstrap and Node.js.
+- Recognised as an extraordinary performer in software test training; delivered critical test tasks on time.
+
+## DocuSign integration work (BARS, client names withheld)
+
+Client names are hidden intentionally: this is my ongoing work at BARS, a DocuSign partner. The code stays private; here I describe the problem, my role, the architecture and the key decisions.
+
+### SAP document data for DocuSign Maestro
+Enterprise client · ongoing · Working prototype · ongoing
+
+- Need: Before a document is signed, a Maestro workflow must pull the right document data from SAP — but users only know an internal request (RDA) number.
+- Role: Built a private DocuSign Data IO Extension App in Node.js/Express that Maestro calls server-to-server. It queries SAP over SOAP and returns the document ID, title and status to the workflow.
+- Flow: Maestro web form → Data IO extension (OAuth 2.0) → SAP (SOAP) → document data → signature step
+- Key decision: OAuth 2.0 client credentials keep the extension a pure server-to-server service with no user login; a tunnel made the full SAP round-trip testable during development.
+- Stack: DocuSign Maestro, Data IO Extension, Node.js, Express, OAuth 2.0, SOAP, SAP
+
+### SharePoint purchase orders → DocuSign
+Enterprise client · proof of concept · Proof of concept
+
+- Need: Vendors must sign a purchase order together with every supporting document stored in SharePoint, sent as a single envelope.
+- Role: Built a Java/Spring Boot service: from a PO number and revision it finds the SharePoint folder via Microsoft Graph, collects the PDFs, assembles the DocuSign envelope (main PO first) and sends it, returning envelope ID, status and warnings.
+- Flow: PO request (REST) → Spring Boot → Microsoft Graph / SharePoint → envelope assembly → DocuSign → vendor
+- Key decision: A mock mode runs the whole flow without Microsoft or DocuSign credentials, and the REST contract is designed for SAP to call later — so it can be demonstrated and tested before access to client systems exists.
+- Stack: Java, Spring Boot, Microsoft Graph, SharePoint, DocuSign eSignature API, REST, Docker
+
+### Signer data from Microsoft Entra ID
+Enterprise client · proof of concept · Proof of concept
+
+- Need: Signed documents must carry company and HR attributes of the sender and the employee, ready for archiving in a document-management system.
+- Role: Built a TypeScript service that resolves envelope roles, matches users by email in Microsoft Entra ID via Microsoft Graph, and writes the mapped attributes as envelope custom fields.
+- Flow: DocuSign envelope → roles → email → Microsoft Graph /users → mapped attributes → envelope custom fields
+- Key decision: Which roles and attributes are used lives in a mapping file, so the business can change it without a code change.
+- Stack: TypeScript, Node.js, Microsoft Graph, Entra ID, DocuSign eSignature API, Vitest
+
+### HR e-signature and archiving to Zucchetti
+Italian enterprise client · ongoing · Analysis + phase-1 prototype · ongoing
+
+- Need: HR onboarding documents should be signed in person on a tablet and then filed automatically in each employee’s folder in Zucchetti HR.
+- Role: Wrote the bilingual functional analysis (EN/IT) and built the phase-1 prototype: in-person signing, archiving and an action log, on mock data.
+- Flow: HR on tablet → in-person signature → signed documents → Zucchetti HR (employee folder) → action log
+- Key decision: DocuSign and Zucchetti sit behind adapters, so the real integrations replace the mocks without changing the UI or the business rules.
+- Stack: DocuSign, Zucchetti HR, Node.js, Adapters, Functional analysis
+
+## Research
+
+At Università Roma Tre I worked on how people learn safety-critical tasks when they can feel what they’re doing — not just see it.
+
+- Designed VR training systems that add haptic (touch) feedback to industrial procedures.
+- Evaluated how these systems support training for Industry 4.0 environments and workplace safety.
+- Brought the research mindset — hypotheses, measurement, iteration — into how I build software today.
+
+## Recruiter FAQ
+
+**Do you have the right to work in Italy?** Yes. I live and work in Rome, currently as a Software Developer at BARS.
+
+**What is your notice period?** It’s flexible — I’m happy to agree a start date that works for both sides.
+
+**Remote, hybrid or on-site?** All three: on-site or hybrid in Rome, or remote.
+
+**How good is your Italian?** A2 and preparing for B1 — I even built my own app to practise verbs. I work comfortably in English.
+
+**Can I see the code of your DocuSign integrations?** The client code is private, so the case studies above describe the problem, my role, the architecture and the key decisions. The SharePoint → DocuSign proof of concept has a public test version, and I’m glad to walk through any design in an interview.
+
+**What kind of role are you looking for?** Software developer roles where Java/Spring Boot backends meet integrations — DocuSign, SAP, Microsoft 365 — and, ideally, AI and RAG.
+
+## Education
+
+- Master's degree, ICT for Internet and Multimedia — Università degli Studi di Padova (2021 – 2023)
+- Bachelor's degree, Electronics and Communication Engineering — Maulana Abul Kalam Azad University of Technology, West Bengal (formerly WBUT) (2011 – 2015)
+
+## Certifications
+
+- Docusign Extension Developer Pro — Docusign
+- Building RAG Agents with LLMs — NVIDIA
+- Software Engineering Job Simulation — J.P. Morgan
+- Torq Partner PS Delivery (TPS 301) — Torq
+

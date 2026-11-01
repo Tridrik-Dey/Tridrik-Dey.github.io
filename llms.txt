@@ -1,0 +1,48 @@
+# Tridrik Dey
+
+> Software Developer at BARS in Rome, a DocuSign partner, integrating DocuSign with SAP, SharePoint, Microsoft Entra ID and HR systems using Java/Spring Boot, Node.js and TypeScript. Also builds RAG and AI-agent projects.
+
+- Location: Rome, Italy (open to roles in Rome, across Italy, or remote)
+- Current role: Software Developer at BARS (since Sep 2025)
+- Email: tridrik21@gmail.com
+- LinkedIn: https://www.linkedin.com/in/tridrik-dey
+- GitHub: https://github.com/Tridrik-Dey
+- Right to work: Italy ✓ (working in Rome)
+- Notice period: Flexible
+- Where: Rome · hybrid · remote
+- Languages: English (professional) · Italian A2, preparing B1
+
+## Pages
+
+- [Portfolio (English)](https://tridrik-dey.github.io/): interactive CV, projects and contact
+- [Portfolio (Italiano)](https://tridrik-dey.github.io/it/): versione italiana
+- [Full CV in Markdown](https://tridrik-dey.github.io/llms-full.txt): complete experience, projects and skills
+- [CV PDF (English)](https://tridrik-dey.github.io/assets/cv/Tridrik-Dey-CV-EN.pdf)
+
+## Key skills
+
+- Enterprise integration: DocuSign eSignature API, DocuSign Maestro, Data IO Extension Apps, SAP (SOAP), Microsoft Graph, SharePoint, Entra ID, OAuth 2.0, Zucchetti HR
+- Backend: Java 17, Spring Boot, Spring MVC, Kafka, REST APIs, JPA / JDBC, MySQL, PostgreSQL, XML / JSON contracts
+- Frontend: React, Angular, SAP UI5, Next.js, TypeScript, JavaScript, jQuery, HTML5 / CSS, Tailwind CSS
+- AI & data: LLMs, RAG, AI agents, LangChain, OpenAI API, Embeddings, FAISS, Whisper, Transformers, Streamlit
+- XR, quality & tools: VR / XR, Haptics, Selenium, Testing / QA, Puppeteer, XState, Firebase, FFmpeg, Git
+
+## DocuSign integration work (client names withheld)
+
+- SAP document data for DocuSign Maestro (Working prototype · ongoing): Built a private DocuSign Data IO Extension App in Node.js/Express that Maestro calls server-to-server. It queries SAP over SOAP and returns the document ID, title and status to the workflow.
+- SharePoint purchase orders → DocuSign (Proof of concept): Built a Java/Spring Boot service: from a PO number and revision it finds the SharePoint folder via Microsoft Graph, collects the PDFs, assembles the DocuSign envelope (main PO first) and sends it, returning envelope ID, status and warnings.
+- Signer data from Microsoft Entra ID (Proof of concept): Built a TypeScript service that resolves envelope roles, matches users by email in Microsoft Entra ID via Microsoft Graph, and writes the mapped attributes as envelope custom fields.
+- HR e-signature and archiving to Zucchetti (Analysis + phase-1 prototype · ongoing): Wrote the bilingual functional analysis (EN/IT) and built the phase-1 prototype: in-person signing, archiving and an action log, on mock data.
+
+## Featured projects
+
+- [Person Registry](https://github.com/Tridrik-Dey/person-registry-monorepo): Full-stack CRUD app (Anagrafica Persona) for people and addresses: search by Codice Fiscale, filters by surname and province, validation and Italian/English DTO mapping.
+- [VideoRAG-AI](https://github.com/Tridrik-Dey/VideoRAG-AI): Talk to your videos: local transcription with faster-whisper, semantic search with bge-small embeddings and FAISS, and answers with exact timestamps and “play from here” citations.
+- [chatCV-AI](https://github.com/Tridrik-Dey/chatCV-AI): An AI assistant that represents me to recruiters: answers questions about a professional profile using RAG with gpt-4o-mini and text-embedding-3-small.
+- [Midas Core (J.P. Morgan)](https://github.com/Tridrik-Dey/jpmc-midas-core): Spring Boot service from the J.P. Morgan Software Engineering program: consumes Kafka transactions, validates them, applies incentive bonuses from a companion API and exposes account balances over REST.
+- [JobSeekerAI](https://github.com/Tridrik-Dey/JobSeekerAI): An autonomous job-application agent: GPT-4 plans the steps, an XState state machine orchestrates the workflow, and Puppeteer drives the browser. Multi-provider, with a CLI and recovery from failures.
+- [AI Ticket Assistant](https://github.com/Tridrik-Dey/ai-ticket-assistant): Hackathon project that classifies support tickets, detects priority, extracts key information and drafts suggested responses.
+- [QuickSum+](https://github.com/Tridrik-Dey/QuickSum-): Offline-friendly summariser running a local T5-small model, with a choice of tone: formal, casual or bullet points.
+- [Italian B1 Verb Master](https://github.com/Tridrik-Dey/italian-b1-verb-master): My app for learning Italian: 200 verbs in every standard tense with B1 at the centre, sentence practice with time clues, mixed tests that group mistakes by verb and tense, and progress saved locally. Covered by 230+ unit and component tests plus Playwright end-to-end tests on desktop and mobile.
+- [Italian Bridge](https://github.com/Tridrik-Dey/italian-bridge): Italian vocabulary learning app from A1 to B1 (CEFR) with Firebase sync across devices.
+- [LinguaLine](https://github.com/Tridrik-Dey/LinguaLine): Chrome extension that overlays Italian subtitles with a live English translation underneath on YouTube and Netflix — built because I was learning Italian myself.
