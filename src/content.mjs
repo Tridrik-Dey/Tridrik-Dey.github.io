@@ -70,6 +70,10 @@ export const ui = {
   },
   download: { en: 'Download CV', it: 'Scarica CV' },
   emailMe: { en: 'Email me', it: 'Scrivimi' },
+  cvIn: {
+    en: { en: 'Download CV in English', it: 'Scarica il CV in inglese' },
+    it: { en: 'Download CV in Italian', it: 'Scarica il CV in italiano' },
+  },
   cvFile: { en: 'assets/cv/Tridrik-Dey-CV-EN.pdf', it: 'assets/cv/Tridrik-Dey-CV-IT.pdf' },
   nav: {
     about: { en: 'About', it: 'Chi sono' },

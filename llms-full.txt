@@ -18,6 +18,7 @@
 - [Portfolio (Italiano)](https://tridrik-dey.github.io/it/): versione italiana
 - [Full CV in Markdown](https://tridrik-dey.github.io/llms-full.txt): complete experience, projects and skills
 - [CV PDF (English)](https://tridrik-dey.github.io/assets/cv/Tridrik-Dey-CV-EN.pdf)
+- [CV PDF (Italiano)](https://tridrik-dey.github.io/assets/cv/Tridrik-Dey-CV-IT.pdf)
 
 ## Key skills
 

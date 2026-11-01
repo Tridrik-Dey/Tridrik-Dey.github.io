@@ -488,3 +488,13 @@ button { font: inherit; color: inherit; }
 @media (prefers-reduced-motion: reduce) {
   .flow .step { animation: none; }
 }
+
+/* "Download CV: EN | IT" choice */
+.cv-choice { padding: 4px 4px 4px 16px; gap: 8px; cursor: default; }
+.cv-choice:hover { transform: none; }
+.cv-choice a {
+  font: 600 .78rem var(--mono); text-decoration: none; color: var(--text);
+  padding: 6px 10px; border-radius: 999px; border: 1px solid var(--line); background: var(--bg);
+}
+.cv-choice a:first-of-type { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+.cv-choice a:hover { border-color: var(--accent); }

@@ -136,6 +136,15 @@ function nav(lang) {
 </header>`;
 }
 
+// "Download CV: EN | IT", with the page's own language first.
+function cvChoice(lang) {
+  const root = lang === 'en' ? '' : '../';
+  const order = lang === 'en' ? ['en', 'it'] : ['it', 'en'];
+  const links = order.map(l =>
+    `<a href="${root}${t(ui.cvFile, l)}" download hreflang="${l}" aria-label="${esc(t(ui.cvIn[l], lang))}">${l.toUpperCase()}</a>`).join('');
+  return `<span class="btn cv-choice"><span aria-hidden="true">${esc(t(ui.download, lang))}</span>${links}</span>`;
+}
+
 function hero(lang) {
   const root = lang === 'en' ? '' : '../';
   return `<section id="hero" class="hero">
@@ -150,7 +159,7 @@ function hero(lang) {
     <div class="hero-actions">
       <a class="btn btn-primary" href="#room">${esc(t(ui.enterRoom, lang))} ↓</a>
       <a class="btn" href="#about">${esc(t(ui.classic, lang))}</a>
-      <a class="btn" href="${root}${t(ui.cvFile, lang)}" download>${esc(t(ui.download, lang))}</a>
+      ${cvChoice(lang)}
       <a class="btn" href="mailto:${site.email}">${esc(t(ui.emailMe, lang))}</a>
     </div>
     <dl class="brief" id="brief" aria-label="${esc(t(ui.briefTitle, lang))}" ${chunkAttrs(t(ui.briefTitle, lang), 'Profile', ui.briefTags.split(' '), 'profile')}>
@@ -262,7 +271,7 @@ function ctaSection(lang) {
   <p>${esc(t(ui.cta.text, lang))}</p>
   <div class="hero-actions">
     <a class="btn btn-primary" href="mailto:${site.email}">${esc(t(ui.emailMe, lang))}</a>
-    <a class="btn" href="${root}${t(ui.cvFile, lang)}" download>${esc(t(ui.download, lang))}</a>
+    ${cvChoice(lang)}
     <a class="btn" href="${site.linkedin}" rel="me">LinkedIn</a>
   </div>
 </section>`;
@@ -425,6 +434,7 @@ function llms(full) {
     `- [Portfolio (Italiano)](${pageUrl('it')}): versione italiana`,
     `- [Full CV in Markdown](${site.url}llms-full.txt): complete experience, projects and skills`,
     `- [CV PDF (English)](${site.url}${t(ui.cvFile, 'en')})`,
+    `- [CV PDF (Italiano)](${site.url}${t(ui.cvFile, 'it')})`,
     '',
     '## Key skills',
     '',
