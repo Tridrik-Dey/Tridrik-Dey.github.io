@@ -79,10 +79,10 @@ const og = `<!doctype html><html><head><meta charset="utf-8">
   .tags { font: 500 22px 'JetBrains Mono', monospace; color: #38bdf8; }
   .url { position: absolute; right: 60px; bottom: 40px; font: 500 20px 'JetBrains Mono', monospace; color: #8b9bb0; }
 </style></head><body>
-<img src="../assets/avatar.png" alt="">
+<img src="../${site.photo}" alt="">
 <div><div class="bin">01010100 01000100 › rome, italy</div><h1>Tridrik Dey</h1>
 <div class="role">Software Developer</div>
-<div class="tags">Java · Spring Boot · LLMs · RAG · AI Agents</div></div>
+<div class="tags">DocuSign Integrations · Java · Spring Boot · RAG</div></div>
 <div class="url">tridrik-dey.github.io</div>
 </body></html>`;
 

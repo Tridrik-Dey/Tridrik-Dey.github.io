@@ -9,7 +9,7 @@ export const site = {
   location: { en: 'Rome, Italy', it: 'Roma, Italia' },
   linkedin: 'https://www.linkedin.com/in/tridrik-dey',
   github: 'https://github.com/Tridrik-Dey',
-  photo: 'assets/avatar.png',
+  photo: 'assets/photo.jpg',
   ogImage: 'assets/og.png',
   updated: '2026-10-31',
   // Search-engine ownership codes (Google Search Console, Bing Webmaster Tools). Empty = no tag.
