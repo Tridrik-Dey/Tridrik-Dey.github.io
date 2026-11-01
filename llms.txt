@@ -25,7 +25,7 @@
 - Backend: Java 17, Spring Boot, Spring MVC, Kafka, REST APIs, JPA / JDBC, MySQL, PostgreSQL, XML / JSON contracts
 - Frontend: React, Angular, SAP UI5, Next.js, TypeScript, JavaScript, jQuery, HTML5 / CSS, Tailwind CSS
 - AI & data: LLMs, RAG, AI agents, LangChain, OpenAI API, Embeddings, FAISS, Whisper, Transformers, Streamlit
-- XR, quality & tools: VR / XR, Haptics, Selenium, Testing / QA, Puppeteer, XState, Firebase, FFmpeg, Git
+- XR, quality & tools: VR / XR, Unity, C#, Meta Quest 3, Haptics (WEART TouchDIVER), Selenium, Testing / QA, Puppeteer, XState, Firebase, FFmpeg, Git
 
 ## DocuSign integration work (client names withheld)
 

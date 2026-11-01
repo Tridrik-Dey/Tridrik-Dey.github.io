@@ -231,14 +231,16 @@ export const experience = [
     start: '2024-01', end: '2025-09',
     period: { en: 'Jan 2024 – Sep 2025', it: 'gen 2024 – set 2025' },
     place: { en: 'Rome, Italy', it: 'Roma, Italia' },
-    tags: ['vr', 'haptics', 'xr', 'research', 'industry-4.0'],
+    tags: ['vr', 'haptics', 'xr', 'research', 'industry-4.0', 'unity', 'csharp', 'meta-quest'],
     points: {
       en: [
-        'Designed and evaluated VR-based training systems with haptic feedback.',
+        'Designed, built and evaluated VR training systems with haptic feedback, in Unity (C#) for Meta Quest 3.',
+        'Integrated WEART TouchDIVER G1 haptic gloves so trainees can feel what they handle, not just see it.',
         'Focus on Industry 4.0 and workplace-safety training scenarios.',
       ],
       it: [
-        'Progettazione e valutazione di sistemi di formazione in VR con feedback aptico.',
+        'Progettazione, sviluppo e valutazione di sistemi di formazione in VR con feedback aptico, in Unity (C#) per Meta Quest 3.',
+        'Integrazione dei guanti aptici WEART TouchDIVER G1, perché chi si forma possa sentire ciò che maneggia, non solo vederlo.',
         'Focus su scenari di formazione per l’Industria 4.0 e la sicurezza sul lavoro.',
       ],
     },
@@ -415,7 +417,8 @@ export const research = {
   en: {
     lead: 'At Università Roma Tre I worked on how people learn safety-critical tasks when they can feel what they’re doing — not just see it.',
     points: [
-      'Designed VR training systems that add haptic (touch) feedback to industrial procedures.',
+      'Designed and built VR training systems in Unity (C#) for Meta Quest 3 that add haptic (touch) feedback to industrial procedures.',
+      'Integrated WEART TouchDIVER G1 haptic gloves, so trainees feel contact and resistance while practising.',
       'Evaluated how these systems support training for Industry 4.0 environments and workplace safety.',
       'Brought the research mindset — hypotheses, measurement, iteration — into how I build software today.',
     ],
@@ -424,7 +427,8 @@ export const research = {
   it: {
     lead: 'All’Università Roma Tre ho studiato come le persone imparano compiti critici per la sicurezza quando possono sentire ciò che fanno, non solo vederlo.',
     points: [
-      'Progettazione di sistemi di formazione in VR che aggiungono feedback aptico (tattile) alle procedure industriali.',
+      'Progettazione e sviluppo in Unity (C#) per Meta Quest 3 di sistemi di formazione in VR che aggiungono feedback aptico (tattile) alle procedure industriali.',
+      'Integrazione dei guanti aptici WEART TouchDIVER G1: chi si forma percepisce contatto e resistenza mentre si esercita.',
       'Valutazione di come questi sistemi supportano la formazione per ambienti Industria 4.0 e la sicurezza sul lavoro.',
       'Ho portato il metodo della ricerca (ipotesi, misurazione, iterazione) nel modo in cui sviluppo software oggi.',
     ],
@@ -559,7 +563,7 @@ export const skills = [
     ['Embeddings', 'embeddings'], ['FAISS', 'faiss'], ['Whisper', 'whisper'], ['Transformers', 'transformers'], ['Streamlit', 'streamlit'],
   ] },
   { group: { en: 'XR, quality & tools', it: 'XR, qualità e strumenti' }, items: [
-    ['VR / XR', 'vr'], ['Haptics', 'haptics'], ['Selenium', 'selenium'], ['Testing / QA', 'testing'], ['Puppeteer', 'puppeteer'],
+    ['VR / XR', 'vr'], ['Unity', 'unity'], ['C#', 'csharp'], ['Meta Quest 3', 'meta-quest'], ['Haptics (WEART TouchDIVER)', 'haptics'], ['Selenium', 'selenium'], ['Testing / QA', 'testing'], ['Puppeteer', 'puppeteer'],
     ['XState', 'xstate'], ['Firebase', 'firebase'], ['FFmpeg', 'ffmpeg'], ['Git', 'git'],
   ] },
 ];

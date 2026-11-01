@@ -25,7 +25,7 @@
 - Backend: Java 17, Spring Boot, Spring MVC, Kafka, REST APIs, JPA / JDBC, MySQL, PostgreSQL, XML / JSON contracts
 - Frontend: React, Angular, SAP UI5, Next.js, TypeScript, JavaScript, jQuery, HTML5 / CSS, Tailwind CSS
 - AI & data: LLMs, RAG, AI agents, LangChain, OpenAI API, Embeddings, FAISS, Whisper, Transformers, Streamlit
-- XR, quality & tools: VR / XR, Haptics, Selenium, Testing / QA, Puppeteer, XState, Firebase, FFmpeg, Git
+- XR, quality & tools: VR / XR, Unity, C#, Meta Quest 3, Haptics (WEART TouchDIVER), Selenium, Testing / QA, Puppeteer, XState, Firebase, FFmpeg, Git
 
 ## DocuSign integration work (client names withheld)
 
@@ -69,7 +69,8 @@ Sep 2025 – Present · Rome, Italy
 ### Research Assistant — Università degli Studi Roma Tre
 Jan 2024 – Sep 2025 · Rome, Italy
 
-- Designed and evaluated VR-based training systems with haptic feedback.
+- Designed, built and evaluated VR training systems with haptic feedback, in Unity (C#) for Meta Quest 3.
+- Integrated WEART TouchDIVER G1 haptic gloves so trainees can feel what they handle, not just see it.
 - Focus on Industry 4.0 and workplace-safety training scenarios.
 
 ### Back Office Manager — JR Motors Pvt Ltd (Tata Motors distributor)
@@ -137,7 +138,8 @@ Italian enterprise client · ongoing · Analysis + phase-1 prototype · ongoing
 
 At Università Roma Tre I worked on how people learn safety-critical tasks when they can feel what they’re doing — not just see it.
 
-- Designed VR training systems that add haptic (touch) feedback to industrial procedures.
+- Designed and built VR training systems in Unity (C#) for Meta Quest 3 that add haptic (touch) feedback to industrial procedures.
+- Integrated WEART TouchDIVER G1 haptic gloves, so trainees feel contact and resistance while practising.
 - Evaluated how these systems support training for Industry 4.0 environments and workplace safety.
 - Brought the research mindset — hypotheses, measurement, iteration — into how I build software today.
 

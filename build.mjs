@@ -267,7 +267,7 @@ function ctaSection(lang) {
 
 function researchSection(lang) {
   const r = research[lang];
-  return `<section id="research" class="section" aria-labelledby="research-h" ${chunkAttrs(t(ui.sections.research, lang), 'Roma Tre', ['vr', 'haptics', 'xr', 'research', 'industry-4.0'], 'research')}>
+  return `<section id="research" class="section" aria-labelledby="research-h" ${chunkAttrs(t(ui.sections.research, lang), 'Roma Tre', ['vr', 'haptics', 'xr', 'research', 'industry-4.0', 'unity', 'csharp', 'meta-quest'], 'research')}>
   <h2 id="research-h" class="section-title">${icon(OBJECT_OF['research'])}${esc(t(ui.sections.research, lang))}</h2>
   <div class="research">
     <div class="haptic-wave" aria-hidden="true"><span></span><span></span><span></span></div>
